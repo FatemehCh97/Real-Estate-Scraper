@@ -33,15 +33,18 @@ The script also saves each property item in a MongoDB database for future refere
 
 ```
 python main.py -t [buy or rent] -c [city1] [city2] ... [cityN] -rf [rooms_from] -rt [rooms_to] -yf [year_from] -yt [year_to] -pf [price_from] -pt [price_to] -r
+```
 
 Replace the placeholders ([...]) with your desired values. Here are some examples:
 
 To search for rental properties in Zurich and Geneva with 3 rooms (and plotting the charts):
+```
 python main.py -t rent -c Zurich Geneva -rt 3 -r
-
+```
 To search for properties for sale in Basel with a minimum price of 500,000 CHF:
+```
 python main.py -t buy -c Basel -pf 500000 -r
-
+```
 
 **Options**
 
